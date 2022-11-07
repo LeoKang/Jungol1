@@ -4,14 +4,18 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int inp1 = scan.nextInt();
-		int inp2 = scan.nextInt();
-		scan.close();
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		sc.close();
 
-//		System.out.println(inp1 + " " + inp2);
+		num1++;
+		System.out.print(num1 + " ");
 
-		int res = inp1++ * --inp2;
-		System.out.println(inp1 + " " + inp2 + " " + res);
+		--num2;
+		System.out.print(num2 + " ");
+
+		num1 = num1 - 1;
+		System.out.print(num1 * num2);
 	}
 }
