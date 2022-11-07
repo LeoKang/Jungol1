@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 
-		int inp = 0;
+		int num;
+		char w1;
 		do {
 			System.out.print("ASCII code =? ");
-			inp = sc.nextInt();
-			if (inp < 33 || inp > 127) {
-				break;
-			}
-			System.out.printf("%c\n", inp);
-		} while (33 <= inp && inp <= 127);
-		sc.close();
+			num = scan.nextInt();
+
+			w1 = (char) num;
+			System.out.println(w1);
+		} while (33 <= num && num <= 127);
+		scan.close();
 	}
 }
