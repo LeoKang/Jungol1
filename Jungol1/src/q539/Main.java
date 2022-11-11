@@ -5,26 +5,17 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] ar = new int[100];
-		int i = 0;
-		for (;; i++) {
-			ar[i] = sc.nextInt();
-			if (ar[i] >= 100) {
-				sc.close();
-				break;
-			}
-		}
-
-		// print
-//		for (int j = 0; j <= i; j++) {
-//			System.out.print(ar[j] + " ");
-//		}
-
+		int num = 0;
+		int count = 0;
 		int sum = 0;
-		for (int j = 0; j <= i; j++) {
-			sum += ar[j];
-		}
-		System.out.println(sum);
-		System.out.printf("%.1f\n", (double) sum / (i + 1));
+		float avg = 0.0f;
+		do {
+			num = sc.nextInt();
+			++count;
+			sum += num;
+		} while (num < 100);
+		sc.close();
+		avg = (float) sum / (float) count;
+		System.out.printf("%d\n%.1f", sum, avg);
 	}
 }
