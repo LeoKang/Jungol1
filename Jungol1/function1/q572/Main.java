@@ -3,19 +3,25 @@ package q572;
 import java.util.Scanner;
 
 public class Main {
-	public double calcArea(int r) {
-		double area = r * r * 3.14;
-		return area;
+	double width;
+//	double radius;
+
+	public Main() {
+
+	}
+
+	public void circle(double radius) {
+		this.width = radius * radius * 3.14;
+		System.out.printf("%.2f", width);
+//		return width;
 	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int r = sc.nextInt();
+		double input = sc.nextDouble();
 		sc.close();
 
-//		System.out.println(r);
-		Main m = new Main();
-		double ret = m.calcArea(r);
-		System.out.printf("%.2f\n", ret);
+		Main c = new Main();
+		c.circle(input);
 	}
 }
