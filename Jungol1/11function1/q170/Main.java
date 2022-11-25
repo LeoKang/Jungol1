@@ -15,12 +15,12 @@ public class Main {
 	public static void main(String[] args) {
 		Main m = new Main();
 		// 1st
-		System.out.println("first");
-		m.printAt();
-		System.out.println("second");
-		m.printAt();
-		System.out.println("third");
-		m.printAt();
+//		System.out.println("first");
+//		m.printAt();
+//		System.out.println("second");
+//		m.printAt();
+//		System.out.println("third");
+//		m.printAt();
 
 		// 2nd
 		String[] str = { "first", "second", "third" };
